@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family:'Timmana' ;
+  src: url(./fonts/Timmana-Regular.ttf);
+}
+
+body{
+  background-color: #F6F7F8;
+  overflow-x: hidden;
+  font-family:'Timmana';
+}
