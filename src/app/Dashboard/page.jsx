@@ -20,7 +20,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import Badge from "@mui/material/Badge";
 import Image from "next/image";
-import img1 from "../Image/2.jpg";
+import img1 from "../Image/profile.JPG";
 import Logo from "../Image/Logo.png";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import HomeIcon from "@mui/icons-material/Home";
@@ -158,7 +158,7 @@ function Page() {
           </IconButton>
           <div className="w-full flex justify-between items-center *:cursor-pointer">
             <Typography className="hidden md:flex text-gray-600">
-              <Image className="" alt="Lpgo" src={Logo} />
+              <Image className="" alt="Logo" src={Logo} />
               <input
                 className="w-72 outline-none ml-6 h-8 rounded-md px-5 border-2 border-gray-200"
                 type="search"

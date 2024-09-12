@@ -20,7 +20,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import Badge from "@mui/material/Badge";
 import Image from "next/image";
-import img1 from "../../Image/2.jpg";
+import img1 from "../../Image/profile.JPG";
 import Logo from "../../Image/Logo.png";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import HomeIcon from "@mui/icons-material/Home";
