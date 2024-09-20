@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link';
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Stack, Alert } from '@mui/material'
@@ -69,8 +69,10 @@ function Page() {
           <button type="submit" className="w-full h-14 flex pt-3 items-center justify-center text-3xl mt-10 text-white bg-blue-500 rounded hover:bg-blue-600 transition duration-300">  
             Login  
           </button> 
-          <a className='flex justify-center mt-5 underline font-bold text-blue-600 text-2xl' href="http://localhost:3000/Register">click for Register</a> 
-        </form>  
+          <Link className='flex justify-center mt-5 underline font-bold text-blue-600 text-2xl' href="/Register">  
+        click for Register  
+    </Link>         
+    </form>  
       </div>  
     </div>  
     </>

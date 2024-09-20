@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";  
 import Alert from "@mui/material/Alert";  
 import CheckIcon from "@mui/icons-material/Check";  
+import Link from "next/link";
 
 function Registration() {  
   const [registerUsername, setRegisterUsername] = useState("");  
@@ -67,9 +68,9 @@ function Registration() {
 
   return (  
     <div className="w-full h-screen flex flex-col justify-center items-center">  
-    <h2 className="text-2xl mt-5 font-bold text-center text-gray-700">Register</h2> 
       <div className="w-11/12 md:w-2/3 lg:w-1/3 h-1/2 shadow-xl flex flex-col rounded-xl">  
         <div className="bg-white py-14 p-5 rounded-b-xl flex-grow">  
+    <h2 className="text-2xl font-bold text-center text-gray-700">Register</h2> 
           {alertMessage && (  
             <Alert icon={<CheckIcon fontSize="inherit" />} severity={alertSeverity}>  
               {alertMessage}  
@@ -111,8 +112,10 @@ function Registration() {
             <button className="w-full bg-green-500 text-white p-2 rounded">  
               Register  
             </button> 
-            <a className='flex justify-center mt-5 underline font-bold text-blue-600 text-2xl' href="http://localhost:3000/">click for Login</a>  
-          </form>  
+            <Link className='flex justify-center mt-5 underline font-bold text-blue-600 text-2xl' href="/">  
+        click for Login  
+    </Link>           
+    </form>  
         </div>  
       </div>  
     </div>  
