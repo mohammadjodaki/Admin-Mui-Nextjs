@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation'
 import { Stack, Alert } from '@mui/material'
 
 function Page() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('mohammadjudaki@gmail.com')
+  const [password, setPassword] = useState('m13681367J')
   const [errorMessage, setErrorMessage] = useState('')
   const router = useRouter()
 
@@ -32,6 +32,7 @@ function Page() {
     }
   };
 
+
   return ( 
     <>
     <div className="flex items-center justify-center h-screen bg-gray-100"> 
@@ -44,10 +45,6 @@ function Page() {
         )}
         </div> 
         <h2 className="text-2xl mt-5 font-bold text-center text-gray-700">Login to Admin Panel</h2>  
-        <div className='w-96 h-24 bg-teal-400 font-bold flex flex-col gap-3 justify-center items-center'>
-          <h2><pre>Email : mohammad@gmail.com</pre></h2>
-          <h2><pre>Password : mohammad1368</pre></h2>
-        </div> 
         <form className="mt-6" onSubmit={handleSubmit}> 
           <div className="mb-4">  
             <label className="block text-gray-600" htmlFor="email">Email:</label> 
@@ -71,7 +68,8 @@ function Page() {
           </div>  
           <button type="submit" className="w-full h-14 flex pt-3 items-center justify-center text-3xl mt-10 text-white bg-blue-500 rounded hover:bg-blue-600 transition duration-300">  
             Login  
-          </button>  
+          </button> 
+          <a className='flex justify-center mt-5 underline font-bold text-blue-600 text-2xl' href="http://localhost:3000/Register">click for Register</a> 
         </form>  
       </div>  
     </div>  
